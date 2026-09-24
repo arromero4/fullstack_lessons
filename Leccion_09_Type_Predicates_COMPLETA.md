@@ -1,5 +1,8 @@
 # Lección 9 — Type Predicates: Type Guards personalizados con `value is Type`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 En la Lección 8 aprendiste a hacer *narrowing* con comprobaciones que TypeScript ya entiende, como `typeof`, `in`, `instanceof`, igualdad y comprobaciones contra `null`. Ahora vamos a dar el siguiente paso: **encapsular algunas de esas comprobaciones en funciones reutilizables capaces de comunicarle a TypeScript qué tipo tiene un valor cuando la comprobación tiene éxito**.
@@ -28,7 +31,7 @@ Al terminar esta lección debes poder:
 - usar type predicates con `unknown`, unions y arrays;
 - reconocer cuándo un type predicate es demasiado débil o peligroso;
 - entender por qué `as` no sustituye una comprobación real;
-- aplicar type predicates a Bitácora de red y al analizador de configuraciones;
+- aplicar type predicates a SiteOps Tracker y al analizador de configuraciones;
 - relacionarlos con React, Node.js, Services, Repositories y manejo de datos externos;
 - distinguir claramente **type checking de TypeScript**, **type guards runtime** y **schema validation**.
 
@@ -872,7 +875,7 @@ Este patrón aparecerá mucho en transformación de datos.
 
 ---
 
-## 20. Aplicación a Bitácora de red
+## 20. Aplicación a SiteOps Tracker
 
 Supón que una vista necesita mostrar únicamente routers.
 
@@ -1271,7 +1274,7 @@ no una colección improvisada de assertions.
 
 ---
 
-## 28. Ejercicio principal — Type predicate para Bitácora de red
+## 28. Ejercicio principal — Type predicate para SiteOps Tracker
 
 Crea:
 
@@ -1662,9 +1665,9 @@ Respuesta conceptual:
 
 ## 35. Cómo explicarlo en una entrevista con tu proyecto
 
-Podrías explicar un caso de Bitácora de red así:
+Podrías explicar un caso de SiteOps Tracker así:
 
-> In my network audit application, a device can be represented by different variants such as routers and switches. I can use a custom type guard with a type predicate to identify a router and let TypeScript narrow the union safely. This is useful when filtering or processing already modeled domain data. For external HTTP payloads, however, I would validate the complete request at runtime before passing it to the service layer.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, a device can be represented by different variants such as routers and switches. I can use a custom type guard with a type predicate to identify a router and let TypeScript narrow the union safely. This is useful when filtering or processing already modeled domain data. For external HTTP payloads, however, I would validate the complete request at runtime before passing it to the service layer.
 
 Esta respuesta demuestra que entiendes dos cosas diferentes:
 
@@ -1684,7 +1687,7 @@ Esa distinción es mucho más importante que simplemente memorizar la sintaxis `
 
 ## 36. Relación con tus proyectos
 
-### Bitácora de red
+### SiteOps Tracker
 
 Podrás distinguir variantes de dispositivos y filtrar colecciones de forma segura.
 

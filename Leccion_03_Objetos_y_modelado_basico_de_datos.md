@@ -1,5 +1,8 @@
 # Lección 3 — Objetos y modelado básico de datos
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 ## 1. Objetivo

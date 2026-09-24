@@ -1,5 +1,8 @@
 # Lección 22 — Exhaustividad práctica, `satisfies` y contratos seguros de configuración
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Ruta:** Full Stack Developer con TypeScript  
 **Etapa actual:** TypeScript profundo  
 **Duración estimada:** 15–20 minutos de estudio guiado  
@@ -39,7 +42,7 @@ Al terminar esta lección podrás:
 3. construir mapas exhaustivos a partir de literal unions;
 4. detectar configuraciones incompletas cuando cambia el dominio;
 5. combinar `as const`, `Record`, mapped types y `satisfies` correctamente;
-6. aplicar el patrón en React, Node.js, una API REST y Bitácora de Red;
+6. aplicar el patrón en React, Node.js, una API REST y SiteOps Tracker;
 7. reconocer que estos contratos desaparecen en runtime;
 8. validar datos externos con Zod antes de tratarlos como configuración confiable.
 
@@ -47,7 +50,7 @@ Al terminar esta lección podrás:
 
 ## 1. El problema: configuración que se desincroniza del dominio
 
-Supón que Bitácora de Red utiliza estos estados:
+Supón que SiteOps Tracker utiliza estos estados:
 
 ```ts
 type AuditStatus =
@@ -897,7 +900,7 @@ Ejecuta el JavaScript final. Los secretos, variables, servicios y respuestas rea
 
 ## 20. Relación explícita con tus proyectos
 
-### Bitácora de Red
+### SiteOps Tracker
 
 Puedes usar mapas exhaustivos para etiquetas, permisos de edición, acciones disponibles, traducción de resultados del Service y presentación de estados de auditoría.
 
@@ -1217,7 +1220,7 @@ No construyas todavía toda la configuración.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de Red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 Modela la presentación de auditorías con esta union:
 
@@ -1371,7 +1374,7 @@ Respuesta breve sugerida:
 
 Puedes explicar:
 
-> In my network audit application, I use discriminated unions for domain results and exhaustive configuration maps for UI metadata and HTTP mappings. The `satisfies` operator helps me verify that every audit status has a configuration without discarding useful inference. At external boundaries, I still validate runtime data with Zod and enforce database constraints in PostgreSQL.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, I use discriminated unions for domain results and exhaustive configuration maps for UI metadata and HTTP mappings. The `satisfies` operator helps me verify that every audit status has a configuration without discarding useful inference. At external boundaries, I still validate runtime data with Zod and enforce database constraints in PostgreSQL.
 
 Puntos que una buena respuesta debe mencionar:
 
@@ -1415,7 +1418,7 @@ En esta lección aprendiste que:
 - los tipos TypeScript desaparecen al generar JavaScript;
 - HTTP, formularios, APIs externas, archivos, variables de entorno y datos de PostgreSQL requieren validación runtime;
 - Zod valida fronteras, PostgreSQL protege persistencia y Vitest comprueba comportamiento;
-- el patrón es útil en React, Controllers, SDKs, analizadores y Bitácora de Red;
+- el patrón es útil en React, Controllers, SDKs, analizadores y SiteOps Tracker;
 - la exhaustividad convierte la evolución del dominio en una lista de cambios detectables por el compilador.
 
 La meta profesional no es usar más sintaxis avanzada. Es diseñar contratos que hagan visibles las inconsistencias antes de que lleguen a producción.

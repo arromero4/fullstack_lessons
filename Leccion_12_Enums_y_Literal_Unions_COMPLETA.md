@@ -1,5 +1,8 @@
 # Lección 12 — Enums y cuándo preferir Literal Unions
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Conexión:** React + HTTP + Node.js + validación runtime + Service + Repository + PostgreSQL
@@ -465,7 +468,7 @@ obtiene los tipos de sus valores:
 
 Lo importante es comprender que TypeScript puede **derivar tipos desde valores existentes**.
 
-## 18. Bitácora de red
+## 18. SiteOps Tracker
 
 ```ts
 type EstadoAuditoria =
@@ -907,7 +910,7 @@ Mantener una union y una lista separada puede causar desincronización. `as cons
 
 Un `2` suele comunicar menos que `"alta"` en JSON, logs y debugging.
 
-## 36. Ejercicio principal — Bitácora de red
+## 36. Ejercicio principal — SiteOps Tracker
 
 Crea:
 
@@ -1170,9 +1173,9 @@ No construyas todavía el componente completo.
 
 > If the domain has a closed set of valid states, using `string` loses useful information. A literal union lets the compiler catch invalid values, improves autocomplete, documents the domain, and makes exhaustive handling possible.
 
-## 43. Cómo explicarlo usando Bitácora de red
+## 43. Cómo explicarlo usando SiteOps Tracker
 
-> In my network audit application, fields such as audit status and finding severity have a closed set of valid values, so I model them with string literal unions instead of plain strings. This improves autocomplete and compile-time safety and also lets me use exhaustive checks. Because these values can arrive through HTTP or imported files, I still validate them at runtime before passing them into the service layer.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, fields such as audit status and finding severity have a closed set of valid values, so I model them with string literal unions instead of plain strings. This improves autocomplete and compile-time safety and also lets me use exhaustive checks. Because these values can arrive through HTTP or imported files, I still validate them at runtime before passing them into the service layer.
 
 Esta explicación demuestra simultáneamente:
 
@@ -1185,7 +1188,7 @@ backend architecture
 
 ## 44. Relación con tus proyectos
 
-### Bitácora de red
+### SiteOps Tracker
 
 Literal unions pueden representar:
 

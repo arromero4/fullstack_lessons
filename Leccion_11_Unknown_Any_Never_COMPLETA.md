@@ -1,5 +1,8 @@
 # Lección 11 — `unknown`, `any` y `never`: diferencias, riesgos y uso profesional
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 En las lecciones anteriores trabajaste con **union types**, **narrowing**, **type guards**, **type predicates** y **discriminated unions**. Todos esos conceptos dependen de una pregunta fundamental:
@@ -633,7 +636,7 @@ procesamiento de archivos
 
 ---
 
-# 21. Aplicación a Bitácora de red
+# 21. Aplicación a SiteOps Tracker
 
 ```ts
 const contenido: unknown =
@@ -1397,7 +1400,7 @@ No uses `any`.
 
 ---
 
-# 46. 🔥 Reto — importación para Bitácora de red
+# 46. 🔥 Reto — importación para SiteOps Tracker
 
 ```ts
 const archivo: unknown = {
@@ -1612,9 +1615,9 @@ Respuesta:
 
 # 51. Cómo explicarlo usando tu proyecto
 
-Sobre Bitácora de red:
+Sobre SiteOps Tracker:
 
-> In my network audit application, external inputs such as HTTP payloads or imported files are treated as untrusted data. I use `unknown` to represent values whose structure has not been established yet. After runtime validation, the service layer receives concrete domain types instead of repeatedly checking the same structure.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, external inputs such as HTTP payloads or imported files are treated as untrusted data. I use `unknown` to represent values whose structure has not been established yet. After runtime validation, the service layer receives concrete domain types instead of repeatedly checking the same structure.
 
 Sobre `any`:
 
@@ -1628,7 +1631,7 @@ Sobre `never`:
 
 # 52. Relación con tus proyectos
 
-## Bitácora de red
+## SiteOps Tracker
 
 `unknown` será importante en:
 

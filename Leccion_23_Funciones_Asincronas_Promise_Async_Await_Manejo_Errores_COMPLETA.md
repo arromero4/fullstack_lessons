@@ -1,5 +1,8 @@
 # Lección 23 — Funciones asíncronas, `Promise<T>`, `async`/`await` y manejo tipado de errores
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Ruta:** Full Stack Developer con TypeScript  
 **Etapa actual:** TypeScript profundo  
 **Duración estimada:** 15–20 minutos de estudio guiado  
@@ -193,14 +196,14 @@ Al declarar una función con `async`, JavaScript garantiza que retornará una Pr
 
 ```ts
 async function getProjectName(): Promise<string> {
-  return "Bitácora de Red";
+  return "SiteOps Tracker";
 }
 ```
 
 Aunque el código retorna un string:
 
 ```ts
-return "Bitácora de Red";
+return "SiteOps Tracker";
 ```
 
 el consumidor recibe:
@@ -213,7 +216,7 @@ Esto es equivalente conceptualmente a:
 
 ```ts
 function getProjectName(): Promise<string> {
-  return Promise.resolve("Bitácora de Red");
+  return Promise.resolve("SiteOps Tracker");
 }
 ```
 
@@ -1324,7 +1327,7 @@ Introduce latencia, timeouts, fallos parciales y reintentos. Logging, métricas 
 
 ## 31. Relación explícita con tus proyectos
 
-### Bitácora de Red
+### SiteOps Tracker
 
 Las cargas de auditorías, hallazgos y sitios retornarán Promises. Services y Repositories deben distinguir ausencia, conflicto y fallo técnico.
 
@@ -1729,7 +1732,7 @@ Tu versión debe:
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de Red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 Implementa un caso de uso que obtenga la vista completa de una auditoría.
 
@@ -1915,7 +1918,7 @@ Respuesta sugerida:
 
 ### Cómo explicarlo con tu portafolio
 
-> In my network audit application, Controllers await Services, Services coordinate domain rules, and Repositories perform asynchronous PostgreSQL operations. Expected outcomes such as not found or invalid status are modeled as discriminated unions. Unexpected database failures propagate to centralized error handling. On the React side, the SDK validates HTTP responses at runtime before components use the data.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, Controllers await Services, Services coordinate domain rules, and Repositories perform asynchronous PostgreSQL operations. Expected outcomes such as not found or invalid status are modeled as discriminated unions. Unexpected database failures propagate to centralized error handling. On the React side, the SDK validates HTTP responses at runtime before components use the data.
 
 Una respuesta sólida debe mencionar:
 

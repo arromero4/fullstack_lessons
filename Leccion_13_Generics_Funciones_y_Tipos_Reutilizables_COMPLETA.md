@@ -1,5 +1,8 @@
 # Lección 13 — Generics: funciones y tipos reutilizables manteniendo información de tipos
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Conexión Full Stack:** React + TypeScript, Node.js, APIs REST, Services, Repositories y SDKs tipados
@@ -617,7 +620,7 @@ Puede utilizar abstracciones genéricas cuando expresen relaciones reales, pero 
 
 No conoce generics TypeScript. Necesita tipos SQL, constraints y reglas reales de integridad.
 
-## 24. Bitácora de red: resultado genérico
+## 24. SiteOps Tracker: resultado genérico
 
 ```ts
 type Resultado<T> =
@@ -927,7 +930,7 @@ Consume el resultado usando narrowing por `success`.
 
 No uses `any` ni assertions.
 
-## 34. 🔥 Reto — Bitácora de red
+## 34. 🔥 Reto — SiteOps Tracker
 
 Define:
 
@@ -1217,9 +1220,9 @@ La estructura se reutiliza mientras el contenido conserva su tipo.
 
 ## 44. Cómo explicarlo con tu portafolio
 
-Sobre Bitácora de red:
+Sobre SiteOps Tracker:
 
-> In my network audit application, I use generics for reusable structures such as operation results and typed helpers. For example, a `Result<T>` can represent either a successful operation containing a specific domain type or an error. This lets me reuse the result structure without losing information about whether the data is a device, audit or collection.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, I use generics for reusable structures such as operation results and typed helpers. For example, a `Result<T>` can represent either a successful operation containing a specific domain type or an error. This lets me reuse the result structure without losing information about whether the data is a device, audit or collection.
 
 Sobre el SDK:
 
@@ -1227,7 +1230,7 @@ Sobre el SDK:
 
 ## 45. Relación con tus proyectos
 
-### Bitácora de red
+### SiteOps Tracker
 
 Resultados y helpers reutilizables para auditorías, dispositivos y hallazgos.
 

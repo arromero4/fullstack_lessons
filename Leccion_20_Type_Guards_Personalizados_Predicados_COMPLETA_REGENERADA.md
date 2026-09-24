@@ -1,5 +1,8 @@
 # Lección 20 — Type Guards personalizados y funciones de predicado (`value is Type`)
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -36,7 +39,7 @@ Al finalizar podrás:
 - trabajar con `unknown`;
 - evitar guards inseguros;
 - distinguir guard, assertion y Zod;
-- aplicarlos a Bitácora, React, Node.js, SDKs y testing;
+- aplicarlos a SiteOps Tracker, React, Node.js, SDKs y testing;
 - ubicarlos correctamente en la arquitectura Full Stack;
 - explicarlos en entrevistas.
 
@@ -169,7 +172,7 @@ const routers =
 Router[]
 ```
 
-# 7. Bitácora de red
+# 7. SiteOps Tracker
 
 ```ts
 type PendingAudit = {
@@ -728,7 +731,7 @@ Si es `Error`, retorna `message`. Si no, `"Unknown error"`.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 ```ts
 type PendingAudit = {
@@ -855,7 +858,7 @@ Clasifica cada uno como `true` o `false`.
 
 # Relación explícita con tus proyectos
 
-**Bitácora de red:** guards para estados de auditoría y filtros.  
+**SiteOps Tracker:** guards para estados de auditoría y filtros.  
 **Repositorio de algoritmos:** narrowing seguro sin confundirlo con complejidad algorítmica.  
 **Analizador:** parser → union controlada → guards.  
 **SDK:** validar respuestas externas antes de exponer tipos confiables.  

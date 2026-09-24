@@ -1,5 +1,8 @@
 # Lección 18 — Conditional Types en TypeScript
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -41,7 +44,7 @@ Al terminar podrás:
 - evitar distribución cuando sea necesario;
 - usar `infer` de forma introductoria;
 - entender `Exclude`, `Extract`, `NonNullable`, `ReturnType` y `Awaited`;
-- aplicar Conditional Types a Bitácora de red, React, Node.js y SDKs;
+- aplicar Conditional Types a SiteOps Tracker, React, Node.js y SDKs;
 - explicar por qué Zod sigue siendo necesario;
 - responder preguntas de entrevista técnica.
 
@@ -233,7 +236,7 @@ Resultado:
 
 `never` elimina miembros no deseados.
 
-# 9. Bitácora de red
+# 9. SiteOps Tracker
 
 ```ts
 type Router = {
@@ -718,7 +721,7 @@ Después compara conceptualmente con `Awaited<T>`.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 ```ts
 type AuditCreated = {
@@ -844,7 +847,7 @@ Explica distribución, `infer`, `never` y qué test runtime seguirías necesitan
 
 # Relación explícita con tus proyectos
 
-**Bitácora de red:** filtrar unions de eventos.  
+**SiteOps Tracker:** filtrar unions de eventos.  
 **Repositorio de algoritmos:** profundizar el type system sin sustituir complejidad algorítmica.  
 **Analizador:** clasificar tipos estáticos; parser runtime por separado.  
 **SDK:** relacionar operaciones y responses.  

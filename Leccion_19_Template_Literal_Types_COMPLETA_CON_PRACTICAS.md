@@ -1,5 +1,8 @@
 # Lección 19 — Template Literal Types en TypeScript
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -332,7 +335,7 @@ type DeviceSetters = {
 };
 ```
 
-# 14. Bitácora de red
+# 14. SiteOps Tracker
 
 ```ts
 type Audit = {
@@ -578,15 +581,15 @@ type Environment =
   "dev" | "test" | "prod";
 
 type ImageTag =
-  `bitacora-api:${Environment}`;
+  `siteops-api:${Environment}`;
 ```
 
 Resultado:
 
 ```text
-bitacora-api:dev
-bitacora-api:test
-bitacora-api:prod
+siteops-api:dev
+siteops-api:test
+siteops-api:prod
 ```
 
 Docker no conoce este tipo.
@@ -851,7 +854,7 @@ Combina Mapped Type, `keyof`, `Capitalize`, Template Literal Type y `T[K]`.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 ```ts
 type Audit = {
@@ -941,7 +944,7 @@ type Environment =
   "dev" | "test" | "prod";
 
 type ImageTag =
-  `bitacora-api:${Environment}`;
+  `siteops-api:${Environment}`;
 ```
 
 Compara un literal conocido con `process.env.IMAGE_TAG`.
@@ -952,7 +955,7 @@ Diseña casos de Vitest para `parseImageTag()`.
 
 # Relación explícita con tus proyectos
 
-**Bitácora de red:** eventos tipados y convenciones internas.  
+**SiteOps Tracker:** eventos tipados y convenciones internas.  
 **Repositorio de algoritmos:** profundiza TypeScript sin sustituir lógica runtime.  
 **Analizador:** claves normalizadas, parser separado.  
 **SDK tipado:** métodos y endpoint keys derivados.  
@@ -976,7 +979,7 @@ Diseña casos de Vitest para `parseImageTag()`.
 11. ¿Por qué Zod sigue siendo necesario?
 12. ¿Qué riesgo tienen unions grandes?
 13. ¿Cómo los usarías en SDKs?
-14. ¿Cómo los usarías en Bitácora?
+14. ¿Cómo los usarías en SiteOps Tracker?
 15. ¿Cómo se relacionan con SQL seguro?
 
 ---

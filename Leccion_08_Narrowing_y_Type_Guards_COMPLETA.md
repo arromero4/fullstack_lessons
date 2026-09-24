@@ -1,5 +1,8 @@
 # Lección 8 — Narrowing y Type Guards con `typeof`, `in` e `instanceof`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 Hoy entramos en uno de los mecanismos que más vas a usar cuando TypeScript te diga: “sé que este valor puede ser varias cosas, pero todavía no sé cuál”. La solución es **reducir el tipo paso a paso hasta llegar a una variante segura**.
@@ -217,7 +220,7 @@ Router
 
 ---
 
-## 7. Aplicación a Bitácora de red
+## 7. Aplicación a SiteOps Tracker
 
 ```ts
 type Router = {

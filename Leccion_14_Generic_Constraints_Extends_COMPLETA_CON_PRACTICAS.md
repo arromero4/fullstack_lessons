@@ -1,5 +1,8 @@
 # Lección 14 — Generic Constraints con `extends`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa de la ruta:** TypeScript profundo  
 **Ruta principal:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -61,7 +64,7 @@ Al terminar esta lección debes poder:
 - reconocer cuándo un constraint aporta valor;
 - evitar constraints innecesarios o demasiado amplios;
 - distinguir compile-time type safety de runtime validation;
-- aplicar constraints a Bitácora de red;
+- aplicar constraints a SiteOps Tracker;
 - aplicarlos al analizador de configuraciones;
 - aplicarlos a helpers de Repository;
 - visualizar su uso futuro en React;
@@ -251,7 +254,7 @@ generic
 
 ---
 
-# 7. Aplicación a Bitácora de red
+# 7. Aplicación a SiteOps Tracker
 
 ```ts
 type Auditoria = {
@@ -1158,7 +1161,7 @@ function sumar(
 
 ---
 
-# 36. PRÁCTICA 1 — Buscar por ID
+# 36. EJERCICIO PRINCIPAL / PRÁCTICA 1 — Buscar por ID
 
 Crea:
 
@@ -1771,7 +1774,7 @@ Antes de crear un constraint, pregunta:
 
 # 50. Cómo explicarlo con tu portafolio
 
-Sobre **Bitácora de red**:
+Sobre **SiteOps Tracker**:
 
 > In my network audit project, audits, devices and findings can share structural properties such as an `id`. When a helper is genuinely reusable, I can use a generic constraint such as `T extends { id: string }`. This lets the helper access the ID safely while preserving whether the concrete result is an Audit or a Device.
 
@@ -1787,7 +1790,7 @@ Sobre arquitectura:
 
 # 51. Relación con tus proyectos
 
-## Bitácora de red
+## SiteOps Tracker
 
 Aplicaciones posibles:
 

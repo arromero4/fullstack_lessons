@@ -1,5 +1,8 @@
 # Lección 4 — `type` e `interface`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 ## 1. Objetivo
@@ -11,7 +14,7 @@ Debes poder:
 - crear contratos con `interface`;
 - conocer similitudes y diferencias;
 - reutilizar contratos en variables, arrays y funciones;
-- modelar entidades de Bitácora de red;
+- modelar entidades de SiteOps Tracker;
 - recordar que ni `type` ni `interface` validan runtime.
 
 ---

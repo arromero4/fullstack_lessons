@@ -1,5 +1,8 @@
 # Lección 17 — Mapped Types en TypeScript
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -48,7 +51,7 @@ Al finalizar debes poder:
 - comprender cómo `Partial`, `Required` y `Readonly` se relacionan con mapped types;
 - transformar tipos de propiedades;
 - reconocer key remapping con `as`;
-- aplicar mapped types a React, Node.js, Bitácora de red, SDKs y testing;
+- aplicar mapped types a React, Node.js, SiteOps Tracker, SDKs y testing;
 - distinguir claramente compile-time type transformation de runtime validation.
 
 ---
@@ -501,7 +504,7 @@ cuando sea apropiado.
 
 ---
 
-# 17. Bitácora de red: dirty fields
+# 17. SiteOps Tracker: dirty fields
 
 ```ts
 type Audit = {
@@ -722,7 +725,7 @@ type DeviceChanges = {
 };
 ```
 
-Esto puede servir en Bitácora de red para registrar cambios antes de persistirlos.
+Esto puede servir en SiteOps Tracker para registrar cambios antes de persistirlos.
 
 ---
 
@@ -1211,7 +1214,7 @@ Explica por qué `T[P] | null` conserva el tipo original.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 Parte de:
 
@@ -1509,7 +1512,7 @@ Responde:
 
 # Relación explícita con tus proyectos
 
-## Bitácora de red
+## SiteOps Tracker
 
 Mapped Types pueden derivar:
 
@@ -1609,7 +1612,7 @@ PostgreSQL
 18. ¿Cuándo usarías un Utility Type estándar?
 19. ¿Por qué no conviene sobreabstraer?
 20. ¿Cómo aplicarías mapped types en React?
-21. ¿Cómo los aplicarías a Bitácora de red?
+21. ¿Cómo los aplicarías a SiteOps Tracker?
 22. ¿Cómo los aplicarías al analizador?
 23. ¿Mapped Types validan HTTP?
 24. ¿Qué responsabilidad tendrá Zod?
@@ -1651,9 +1654,9 @@ PostgreSQL
 
 # Cómo explicarlo con tu portafolio
 
-Sobre Bitácora de red:
+Sobre SiteOps Tracker:
 
-> In my network audit application, mapped types can derive structures such as field-level validation errors or change tracking directly from audit models, reducing duplicated property names while preserving type safety.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, mapped types can derive structures such as field-level validation errors or change tracking directly from audit models, reducing duplicated property names while preserving type safety.
 
 Sobre el analizador:
 

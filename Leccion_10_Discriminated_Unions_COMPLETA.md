@@ -1,5 +1,8 @@
 # Lección 10 — Discriminated Unions
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración objetivo:** 15–20 minutos.
 
 En las últimas lecciones has trabajado con union types, narrowing, type guards y type predicates. Ahora vamos a combinar varias de esas ideas en uno de los patrones más potentes de TypeScript para modelar estados y variantes de dominio de forma segura: las **discriminated unions**.
@@ -38,7 +41,7 @@ Al terminar esta lección debes poder:
 - entender por qué `boolean` + propiedades opcionales suele ser un modelo más débil;
 - aplicar discriminated unions a estados de React;
 - aplicarlas a resultados de Services y APIs;
-- aplicarlas a Bitácora de red y al analizador de configuraciones;
+- aplicarlas a SiteOps Tracker y al analizador de configuraciones;
 - entender el patrón de exhaustive checking con `never`;
 - diferenciar discriminated unions de runtime validation;
 - explicar por qué el discriminante de TypeScript no valida automáticamente datos HTTP.
@@ -320,7 +323,7 @@ Podemos representar esa relación directamente en el tipo.
 
 ---
 
-## 9. Aplicación a Bitácora de red
+## 9. Aplicación a SiteOps Tracker
 
 Imagina varios tipos de dispositivos.
 
@@ -365,7 +368,7 @@ es el discriminante.
 
 ---
 
-## 10. Narrowing en Bitácora de red
+## 10. Narrowing en SiteOps Tracker
 
 Podemos hacer:
 
@@ -1465,7 +1468,7 @@ ayuda a detectar esos casos durante desarrollo.
 
 ---
 
-# 40. 🧪 Ejercicio — Dispositivos de Bitácora de red
+# 40. 🧪 Ejercicio — Dispositivos de SiteOps Tracker
 
 Crea:
 
@@ -1820,7 +1823,7 @@ Respuesta:
 
 Podrías decir en una entrevista:
 
-> In my network audit application, I can model different network devices as a discriminated union using a `tipo` field. Routers, switches, and firewalls can each expose only the properties that belong to that device type. When I check the discriminator, TypeScript narrows the object automatically. I can also use exhaustive checking so that if I later add another device type, the compiler helps me find logic that must be updated.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, I can model different network devices as a discriminated union using a `tipo` field. Routers, switches, and firewalls can each expose only the properties that belong to that device type. When I check the discriminator, TypeScript narrows the object automatically. I can also use exhaustive checking so that if I later add another device type, the compiler helps me find logic that must be updated.
 
 Y para React:
 
@@ -1832,7 +1835,7 @@ Eso demuestra que entiendes el patrón tanto a nivel sintáctico como arquitect�
 
 ## 48. Relación con tus proyectos
 
-### Bitácora de red
+### SiteOps Tracker
 
 Puedes modelar:
 

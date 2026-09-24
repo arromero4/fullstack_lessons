@@ -1,5 +1,8 @@
 # Lección 21 — Discriminated Unions avanzadas y exhaustividad con `never`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -53,7 +56,7 @@ Al terminar podrás:
 - crear `assertNever`;
 - distinguir exhaustividad compile time de runtime validation;
 - integrar Zod, Service, Controller y PostgreSQL;
-- aplicar estos conceptos a Bitácora de red;
+- aplicar estos conceptos a SiteOps Tracker;
 - explicar el tema en entrevistas.
 
 ---
@@ -359,7 +362,7 @@ Zod valida runtime.
 
 TypeScript hace narrowing y exhaustividad compile time.
 
-# 13. Bitácora de red
+# 13. SiteOps Tracker
 
 ```ts
 type Audit =
@@ -1038,7 +1041,7 @@ Diseña un `switch` exhaustivo.
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 Diseña `Audit` con:
 
@@ -1218,7 +1221,7 @@ Explica qué detecta TypeScript y qué detecta Vitest.
 
 # Relación explícita con tus proyectos
 
-## Bitácora de red
+## SiteOps Tracker
 
 Estados de auditoría son un caso natural de discriminated unions.
 
@@ -1265,7 +1268,7 @@ Un nuevo estado puede impactar React, API, validación, Service, DB, migrations 
 17. ¿Qué protege PostgreSQL?
 18. ¿Qué diferencia hay entre `void` y `never`?
 19. ¿Por qué tests siguen siendo necesarios?
-20. ¿Cómo aplicarías esto en Bitácora?
+20. ¿Cómo aplicarías esto en SiteOps Tracker?
 
 ---
 

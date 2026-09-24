@@ -1,5 +1,8 @@
 # Lección 15 — `keyof`, `typeof` e Indexed Access Types
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración estimada:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -67,7 +70,7 @@ Al terminar esta lección debes poder:
 - evitar duplicación innecesaria de tipos;
 - construir helpers correctamente tipados;
 - entender `typeof array[number]`;
-- conectar estos conceptos con Bitácora de red, React, Node.js y un SDK;
+- conectar estos conceptos con SiteOps Tracker, React, Node.js y un SDK;
 - distinguir compile-time type information de runtime validation.
 
 ---
@@ -339,7 +342,7 @@ keyof
 
 ---
 
-# 11. Aplicación a Bitácora de red
+# 11. Aplicación a SiteOps Tracker
 
 ```ts
 const etiquetasEstado = {
@@ -1040,7 +1043,7 @@ Eso no valida nada.
 
 ---
 
-# 34. PRÁCTICA 1 — `keyof` en Bitácora de red
+# 34. EJERCICIO PRINCIPAL / PRÁCTICA 1 — `keyof` en SiteOps Tracker
 
 Define:
 
@@ -1429,7 +1432,7 @@ Responde:
 
 # 43. Relación con tus proyectos
 
-## Bitácora de red
+## SiteOps Tracker
 
 Puedes derivar campos válidos, estados y tipos de propiedades sin duplicar contratos.
 
@@ -1479,7 +1482,7 @@ Podrás construir tablas, formularios y componentes genéricos sin `any`.
 20. ¿Por qué TypeScript no sustituye seguridad SQL?
 21. ¿Cómo usarías `keyof` en una tabla React?
 22. ¿Cómo usarías `keyof` en un SDK?
-23. ¿Cómo usarías indexed access en Bitácora de red?
+23. ¿Cómo usarías indexed access en SiteOps Tracker?
 24. ¿Qué riesgo tiene duplicar unions?
 25. ¿Cómo explicarías estos conceptos en entrevista?
 
@@ -1511,9 +1514,9 @@ Podrás construir tablas, formularios y componentes genéricos sin `any`.
 
 # 46. Cómo explicarlo con tu portafolio
 
-Sobre Bitácora de red:
+Sobre SiteOps Tracker:
 
-> In my network audit application, I use `keyof` to represent valid fields of models such as devices or audits, and indexed access types to reuse the exact type of a property without duplicating it.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, I use `keyof` to represent valid fields of models such as devices or audits, and indexed access types to reuse the exact type of a property without duplicating it.
 
 Sobre el analizador:
 

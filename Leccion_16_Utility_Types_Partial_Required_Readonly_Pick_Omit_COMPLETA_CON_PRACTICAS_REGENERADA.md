@@ -1,5 +1,8 @@
 # Lección 16 — Utility Types: `Partial`, `Required`, `Readonly`, `Pick` y `Omit`
 
+> **Proyecto transversal de portafolio — SiteOps Tracker:** aplicación ficticia para auditar infraestructura TI en distintas sedes, registrar activos, hallazgos, estados, responsables, acciones correctivas e historial. Arquitectura Full Stack objetivo: React + TypeScript, Node.js/Express + TypeScript, PostgreSQL, Testing y Docker. Todos los nombres, datos y escenarios son ficticios.
+
+
 **Duración:** 15–20 minutos  
 **Etapa:** TypeScript profundo  
 **Ruta:** Full Stack Developer | React + TypeScript | Node.js | PostgreSQL | Testing | Docker
@@ -501,7 +504,7 @@ La primera versión puede ser más legible cuando `EditableDeviceFields` tiene s
 
 ---
 
-## 13. Aplicación a Bitácora de red
+## 13. Aplicación a SiteOps Tracker
 
 ```ts
 type Auditoria = {
@@ -956,7 +959,7 @@ Partial
 
 ---
 
-# EJERCICIO PRINCIPAL — Bitácora de red
+# EJERCICIO PRINCIPAL — SiteOps Tracker
 
 ```ts
 type Hallazgo = {
@@ -1162,7 +1165,7 @@ Responde:
 
 # Relación explícita con tus proyectos
 
-**Bitácora de red:** inputs de creación/actualización, resúmenes y fixtures.  
+**SiteOps Tracker:** inputs de creación/actualización, resúmenes y fixtures.  
 **Repositorio de algoritmos:** refuerza transformación de tipos y `keyof`.  
 **Analizador:** configuración parcial/resuelta y subconjuntos de campos.  
 **SDK tipado:** Create/Update/Public contracts sin `any`.  
@@ -1225,7 +1228,7 @@ Responde:
 
 # Cómo explicarlo con tu portafolio
 
-> In my network audit application, I use utility types to derive operation-specific contracts. For example, an audit update can use `Partial<Pick<Audit, "status" | "assignee" | "notes">>`, which keeps immutable fields such as the ID outside the update contract.
+> In SiteOps Tracker, my fictional infrastructure-audit portfolio application, I use utility types to derive operation-specific contracts. For example, an audit update can use `Partial<Pick<Audit, "status" | "assignee" | "notes">>`, which keeps immutable fields such as the ID outside the update contract.
 
 > I keep TypeScript DTOs separate from runtime trust. HTTP payloads are validated before they enter the service layer.
 
